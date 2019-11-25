@@ -2,7 +2,7 @@ import logging
 from django.contrib.auth import get_user_model
 from django.shortcuts import render
 
-from utils.common_b import get_p_data
+from xyapps.utils.common_b import get_p_data
 from xyviews.xydata.models import DouYu, ZhiHu
 from xyapps.utils.base62 import apidecode, apiencode
 

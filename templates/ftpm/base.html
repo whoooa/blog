@@ -4,11 +4,11 @@
 {% block html_head %}
     <head>
         <meta charset="utf-8"/>
-        <title>{% block head_title %}数据工厂|网络大V介绍{% endblock %}</title>
+        <title>{% block head_title %}数据坞|我的主页{% endblock %}</title>
         <meta name="author" content="niujw"/>
         {% block seo %}
-            <meta name="title" content="网络大V详情，斗鱼主播人物介绍，知乎大V详情介绍"/>
-            <meta name="keywords" content="人物详情，主播"/>
+            <meta name="title" content="niujw的个人博客，数据工厂"/>
+            <meta name="keywords" content="个人博客"/>
             <meta name="description" content=""/>
         {% endblock %}
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -55,41 +55,19 @@
     ================================================== -->
     <header>
 
-        <!-- Top Panel
-        ================================================== -->
-        {#    <div id="top-panel">#}
-        {#      <div class="login-box">#}
-        {#        <form />#}
-        {#		  <div class="input-prepend">#}
-        {#            <span class="add-on"><i class="icon-user"></i></span><input class="span2" id="username" type="text" name="username" placeholder="User Name" />#}
-        {#          </div>#}
-        {#		  <div class="input-prepend">#}
-        {#            <span class="add-on"><i class="icon-lock"></i></span><input class="span2" id="userpassword" type="password" name="userpassword" placeholder="Password" />#}
-        {#          </div>#}
-        {#          <label class="checkbox">#}
-        {#    		<input type="checkbox" /> 记住我#}
-        {#  		  </label>#}
-        {#          <button type="submit" class="btn">登陆</button>#}
-        {#        </form>#}
-        {#      </div><!-- login-box -->#}
-        {#      <div class="login-button toggle">#}
-        {#        <a href="#">登陆</a>#}
-        {#      </div><!-- login-button -->#}
-        {#    </div><!-- top-panel -->#}
-
         <!-- Navbar
         ================================================== -->
         {% block navbar %}
             <div class="row">
-                <div class="span3 logo">
-                    <a href="index.html"><img src="{% static "ftpm/img/logo.png" %}" alt=""/></a>
+                <div class="span3 logo" style="text-align: center">
+                    <a href="index.html"><img style="height: 65px" src="{% static "ftpm/img/logo.png" %}" alt=""/></a>
                 </div><!-- logo -->
-                <div class="span9 navigation">
+                <div class="span9 navigation" >
                     <div id="menu" class="fix-fish-menu clearfix">
                         <ul id="nav" class="sf-menu">
                             <li {% if request.path == "/" %}class="active"{% endif %}><a href="{% url "home" %}">主页</a>
                             </li>
-                             <li {% if "blog" in request.path %}class="active"{% endif %}><a href="#">站长博客</a>
+                             <li {% if "blog" in request.path %}class="active"{% endif %}><a href="#">我的博客</a>
                             </li>
                             <li {% if "about" in request.path %}class="active"{% endif %}><a href="#">关于本站</a></li>
                         </ul><!-- end #nav  -->
@@ -123,7 +101,7 @@
                 </div><!-- span3 -->
                 <div class="span9">
                     <div class="separator">
-                        <h3>{% block separator_content %}欢迎进入数据工厂{% endblock %}</h3>
+                        <h3>{% block separator_content %}欢迎进入数据坞{% endblock %}</h3>
                     </div><!-- separator -->
                     <span></span>
                 </div><!-- span9 -->
